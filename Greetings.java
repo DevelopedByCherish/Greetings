@@ -97,16 +97,7 @@ public class Greetings {
          System.out.println("");
 
          }
-        //  else if (tellJoke == 2 )
-//          {
-//          System.out.println("Well I hope that joke made "+ Feel);
-//          System.out.println("");
-//       //    }
-//          else 
-//          {
-//          System.out.println("Hope that joke made"+ Feel+ ".");
-//          System.out.println("");
-//          }
+
           }
          
 
