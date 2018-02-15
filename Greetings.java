@@ -1,12 +1,12 @@
 /*
  * Cherish Shanks
  * Greetings 
- * 6/8/2016
+ * 6/8/2016 to present
  */
 
 
 import java.util.*;
-import java.io.*;
+
 
 public class Greetings {
 
@@ -20,16 +20,14 @@ public class Greetings {
 		   
 
 		   System.out.println("Hello " + name );
-		  // System.out.println(); 
+
 		  
 		   String reply =null;
 		   String joke;
 		   String Feel = null;
-		  // String tellJoke = null;
+
 		   int num = 0;
-         //boolean yes = true;
-         //boolean no = false;
-		   
+
 		   
 		   int rate;
 		   System.out.println("Rate how you are feeling today "
