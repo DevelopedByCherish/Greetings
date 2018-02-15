@@ -24,6 +24,7 @@ public class Greetings {
 		  
 		   String reply =null;
 		   String joke;
+         String joke2;
 		   String Feel = null;
 
 		   int num = 0;
@@ -69,24 +70,46 @@ public class Greetings {
          break;
          default: joke = "I'm not sure if that was a yes or no but here is the Joke anyways!";
          }
+          
+           System.out.println(joke);
+          System.out.println("");
          
-         System.out.println(joke);
+         if (tellJoke == 1){
+         
+         System.out.println("Want to hear another Joke? 1 = yes 2 = no");
+         tellJoke = keyboard.nextInt();
+         
+         switch(tellJoke)
+         {
+         case 1: joke2 = "I brought some shoes from a drug dealer yesterday, I don't know what he laced them with but I've been tripping all day!";
+         break;
+         case 2: joke2 = "Okay well I hope that first joke made "+ Feel+ " !!!";
+         break;
+         default: joke2 = "I'm not sure if that was a yes or no but here is the Joke anyways!";
+
+         }
+         System.out.println(joke2);
+         
+          if (tellJoke == 1)
+         {
          System.out.println("");
-         
-         if (tellJoke == 1)
-         {
-         System.out.println("Hope that joke made "+ Feel+ ".");
+         System.out.println("Hope those joke made "+ Feel+ ".");
+         System.out.println("");
 
          }
-         else if (tellJoke == 2)
-         {
-         System.out.println("Well I hope "+ Feel);
-         }
-         else 
-         {
-         System.out.println("Hope that joke made"+ Feel+ ".");
-         }
+        //  else if (tellJoke == 2 )
+//          {
+//          System.out.println("Well I hope that joke made "+ Feel);
+//          System.out.println("");
+//       //    }
+//          else 
+//          {
+//          System.out.println("Hope that joke made"+ Feel+ ".");
+//          System.out.println("");
+//          }
+          }
          
+
+         
+        } 
 	}
-
-}
