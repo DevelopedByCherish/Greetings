@@ -6,11 +6,12 @@
 
 
 import java.util.*;
+import java.io.*;
 
 public class Greetings {
 
 	public static void main(String[] args) {
-		 // instantiate standard input object
+	 // instantiate standard input object
 		   Scanner keyboard = new Scanner(System.in);
 		   
 		   String name;
@@ -24,8 +25,10 @@ public class Greetings {
 		   String reply =null;
 		   String joke;
 		   String Feel = null;
-		   String tellJoke = null;
+		  // String tellJoke = null;
 		   int num = 0;
+         //boolean yes = true;
+         //boolean no = false;
 		   
 		   
 		   int rate;
@@ -50,19 +53,42 @@ public class Greetings {
 		   
 		   switch(rate)
 		   {
-		   case 1: case 2: case 3: Feel = " you feel better";
+		   case 1: case 2: case 3: Feel = "you feel better";
 		   break;
-		   case 4: case 5: Feel = " you feel even better";
+		   case 4: case 5: Feel = "you feel even better";
 		   }
-		  
-		   System.out.println("Here is a Joke to make" +Feel+ "?");
-		   System.out.println();
-		   
-		   System.out.println("Did you hear about the hungry clock? He went back four seconds." );
-		   System.out.println();
-		   
-		   System.out.println("Hope that joke made"+ Feel+ ".");
+         
+         int tellJoke;
+         System.out.println("Want to hear a Joke to make "+ Feel+ "? 1 = yes 2 = no");
+         tellJoke = keyboard.nextInt();
+         
+         
+         switch(tellJoke)
+         {
+         case 1: joke = "Did you hear about the hungry clock? He went back four seconds.";
+         break;
+         case 2: joke = "Okay well I hope something make "+ Feel+ " today!!!";
+         break;
+         default: joke = "I'm not sure if that was a yes or no but here is the Joke anyways!";
+         }
+         
+         System.out.println(joke);
+         System.out.println("");
+         
+         if (tellJoke == 1)
+         {
+         System.out.println("Hope that joke made "+ Feel+ ".");
 
+         }
+         else if (tellJoke == 2)
+         {
+         System.out.println("Well I hope "+ Feel);
+         }
+         else 
+         {
+         System.out.println("Hope that joke made"+ Feel+ ".");
+         }
+         
 	}
 
 }
